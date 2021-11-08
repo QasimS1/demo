@@ -1,14 +1,19 @@
 package com.generic;
 
-public class Employee extends MyGeneric{
-    Integer id;
-    String name;
-    String department;
+public class Employee <T>{
+    private T t;
 
 
-    public Employee(Integer id, String name, String department) {
-        this.id = id;
-        this.name = name;
-        this.department = department;
+    public T getT() {
+        return t;
+    }
+
+    public void setT(T t) {
+        this.t = t;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

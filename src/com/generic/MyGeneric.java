@@ -1,6 +1,8 @@
 package com.generic;
 
 import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MyGeneric {
 
@@ -22,8 +24,14 @@ public class MyGeneric {
                 Employee emp03 = new Engineer(3,"Ali","Any Division");
 
                 //comparing department
-                emp01.setT(emp01);
-                System.out.println(emp01.getT());
+                List<Employee> list = new ArrayList<Employee>();
+
+                list.add(emp01);
+                list.add(emp02);
+                list.add(emp03);
+                System.out.println(list);
+
+
 
 
 
